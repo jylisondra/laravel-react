@@ -1,0 +1,22 @@
+# Node
+node_modules/
+dist/
+.vite/
+
+# Laravel
+vendor/
+.env
+.env.*
+storage/
+bootstrap/cache/
+
+# Docker
+mysql-data/
+
+# Logs and temp files
+*.log
+*.tmp
+.DS_Store
+.idea/
+.vscode/
+coverage/

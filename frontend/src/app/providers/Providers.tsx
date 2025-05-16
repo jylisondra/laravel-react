@@ -1,12 +1,16 @@
 import React from 'react'
-import { createTheme, MantineProvider, DEFAULT_THEME } from '@mantine/core'
-import { theme } from 'app/theme/theme'
+import { MantineProvider } from '@mantine/core'
+import { Provider } from 'react-redux'
+import { store } from 'app/store'
+import { theme } from 'app/theme'
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
-    <MantineProvider theme={theme}>
-      {children}
-    </MantineProvider>
+    <Provider store={store}>
+      <MantineProvider theme={theme}>
+        {children}
+      </MantineProvider>
+    </Provider>
   )
 }
 

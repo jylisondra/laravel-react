@@ -1,8 +1,10 @@
 import React from 'react'
+import { useMantineTheme } from '@mantine/core'
 
 const HomePage = () => {
+    const theme = useMantineTheme()
     return (
-        <div>Home Page</div>
+        <div style={{ color: theme.colors.primary[9] }}>Home Page!</div>
     )
 }
 

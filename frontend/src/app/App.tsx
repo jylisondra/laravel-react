@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import AppRouter from 'routes/AppRouter'
+import { Providers } from 'app/providers'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Providers>
       <AppRouter />
-    </BrowserRouter>
+    </Providers>
   )
 }
 

@@ -19,7 +19,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "types": ["vite-plugin-svgr/client"]
   },
   "include": ["src"],
 }

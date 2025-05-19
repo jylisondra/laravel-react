@@ -1,0 +1,55 @@
+.linkContainer {
+  border-radius: var(--mantine-radius-default);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: var(--mantine-spacing-xs);
+}
+
+.linkContainerButton {
+  background: var(--mantine-color-secondary-8);
+  border: none;
+  border-top-left-radius: var(--mantine-radius-default);
+  border-top-right-radius: var(--mantine-radius-default);
+  cursor: pointer;
+  font-size: var(--mantine-font-size-md);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  background: var(--mantine-color-secondary);
+  border-radius: var(--mantine-radius-default);
+}
+
+.subLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  background: var(--mantine-color-secondary-7);
+  border-bottom-right-radius: var(--mantine-radius-default);
+  border-bottom-left-radius: var(--mantine-radius-default);
+}
+
+.subLinkText {
+  background: var(--mantine-color-secondary-7);
+  color: var(--mantine-colors-text-light);
+  padding-left: 2.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.subLinkText:last-child {
+  border-bottom-left-radius: var(--mantine-radius-default);
+  border-bottom-right-radius: var(--mantine-radius-default);
+}
+
+.subLinkText:hover,
+.subLinkText:active {
+  background: var(--mantine-color-secondary-6);
+}

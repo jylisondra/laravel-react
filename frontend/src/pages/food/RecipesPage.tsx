@@ -1,11 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const RecipesPage = () => {
     return (
+        <>
         <div>
-            <h1>Recipes Page</h1>
-            <p>This is the recipes page.</p>
+            <h1>Recipes Nav bar here</h1>
         </div>
+        <Outlet />
+        </>
     )
 }
 

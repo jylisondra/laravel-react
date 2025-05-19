@@ -1,4 +1,4 @@
-import { createTheme, MantineColorsTuple  } from '@mantine/core'
+import { createTheme, MantineColorsTuple, CSSVariablesResolver } from '@mantine/core'
 
 const primary: MantineColorsTuple = [
     "#f9f1f1",
@@ -14,16 +14,16 @@ const primary: MantineColorsTuple = [
 ]
 
 const secondary: MantineColorsTuple = [
-    "#fff0f0",
-    "#f0e4e4",
-    "#d5c8c8",
-    "#baabab",
-    "#a39292",
-    "#998686",
-    "#907979",
-    "#7e6767",
-    "#725a5b",
-    "#674c4c"
+    "#fcf2f2",
+    "#e9e5e5",
+    "#cecaca",
+    "#b3adad",
+    "#9d9494",
+    "#8f8484",
+    "#8a7c7c",
+    "#786969",
+    "#6e5e5e",
+    "#624e4e"
 ]
 
 const background: MantineColorsTuple = [
@@ -52,7 +52,7 @@ const card: MantineColorsTuple = [
     "#5c5557"
 ]
 
-const text: MantineColorsTuple = [
+const textDark: MantineColorsTuple = [
     "#f5f5f5",
     "#e7e7e7",
     "#cccccc",
@@ -64,6 +64,20 @@ const text: MantineColorsTuple = [
     "#636363",
     "#252323"
 ]
+
+const textLight: MantineColorsTuple = [
+    "#fef4ea",
+    "#f0e7de",
+    "#e5dacf",
+    "#c8b29c",
+    "#b79b7f",
+    "#ac8c6c",
+    "#a88461",
+    "#937150",
+    "#846445",
+    "#745636"
+]
+
 
 const accentRed: MantineColorsTuple = [
     "#ffecec",
@@ -78,6 +92,24 @@ const accentRed: MantineColorsTuple = [
     "#8c1f23"
 ]
 
+export const resolver: CSSVariablesResolver = (theme) => ({
+    variables: {
+        '--mantine-color-secondary': theme.colors.secondary[9],
+        '--mantine-color-white': '#E8E8E8',
+        '--mantine-color-black': '#252323',
+        '--mantine-colors-text-light': theme.colors.textLight[2],
+        '--mantine-font-size-sm': '0.875rem',
+        '--mantine-font-size-md': '1rem',
+        '--mantine-font-size-lg': '1.125rem',
+        '--mantine-font-size-xl': '1.25rem',
+        '--mantine-radius-default': '6px',
+    },
+    light: {
+    },
+    dark: {
+    },
+})
+
 export const theme = createTheme({
     colors: {
         primary,
@@ -85,8 +117,16 @@ export const theme = createTheme({
         accentRed,
         background,
         card,
-        text,
+        textDark,
+        textLight,
     },
+    spacing: {
+        xs: '0.5rem',
+        sm: '1rem',    
+        md: '1.5rem',  
+        lg: '2rem',    
+        xl: '3rem',    
+        },
     defaultRadius: 6,
 })
 

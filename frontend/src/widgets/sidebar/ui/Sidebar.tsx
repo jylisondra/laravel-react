@@ -41,6 +41,7 @@ const SideBar = () => {
     <Box
       component='nav'
       style={(theme) => ({
+        paddingTop: theme.spacing.sm,
         width: 250,
         backgroundColor: theme.colors.secondary[9],
         height: '100vh',

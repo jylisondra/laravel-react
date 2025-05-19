@@ -94,6 +94,7 @@ const accentRed: MantineColorsTuple = [
 
 export const resolver: CSSVariablesResolver = (theme) => ({
     variables: {
+        '--mantine-color-primary': theme.colors.primary[9],
         '--mantine-color-secondary': theme.colors.secondary[9],
         '--mantine-color-white': '#E8E8E8',
         '--mantine-color-black': '#252323',

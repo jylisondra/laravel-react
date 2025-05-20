@@ -1,13 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import { RecipeFilterBar } from 'features/recipeFilter'
 
 const RecipesPage = () => {
     return (
         <>
-        <div>
-            <h1>Recipes Nav bar here</h1>
-        </div>
-        <Outlet />
+            <RecipeFilterBar />
+            <Outlet />
         </>
     )
 }

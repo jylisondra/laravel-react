@@ -35,7 +35,7 @@
 
 .subLinkText {
   background: var(--mantine-color-secondary-7);
-  color: var(--mantine-colors-text-light);
+  color: var(--mantine-color-text-light);
   padding-left: 2.5rem;
   padding-top: .5rem;
   padding-bottom: .5rem;

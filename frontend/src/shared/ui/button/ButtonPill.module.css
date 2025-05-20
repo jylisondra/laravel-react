@@ -1,0 +1,17 @@
+.buttonPill {
+  background: var(--mantine-color-pill);
+  border: none;
+  border-radius: var(--mantine-radius-default);
+  color: var(--mantine-color-primary);
+  font-size: var(--mantine-font-size-md);
+  letter-spacing: 0.05rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  transition: .25s ease-in-out;
+}
+
+.buttonPill:hover,
+.buttonPill:active {
+  background: var(--mantine-color-primary);
+  color: var(--mantine-color-text-light);
+}

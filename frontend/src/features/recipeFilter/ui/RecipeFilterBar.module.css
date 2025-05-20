@@ -1,0 +1,42 @@
+.filterContainer {
+  background: var(--mantine-color-card);
+  border-radius: var(--mantine-radius-default);
+  box-shadow: var(--mantine-dropshadow-card);
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.filterButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .65rem;
+  padding: var(--mantine-spacing-xs);
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--mantine-spacing-xs);
+}
+
+.searchButtonContainer {
+  display: flex;
+  background: var(--mantine-color-pill);
+  border: none;
+  border-radius: var(--mantine-radius-default);
+  margin-right: 1rem;
+  padding: var(--mantine-spacing-xs);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: .2s ease;
+}
+
+.searchButtonActive {
+  /* transform: translateX(-10rem); */
+  transition: .2s ease;
+}
+.searchInput {
+
+}

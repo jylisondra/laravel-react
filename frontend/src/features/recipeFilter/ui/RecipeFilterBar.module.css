@@ -3,7 +3,7 @@
   border-radius: var(--mantine-radius-default);
   box-shadow: var(--mantine-dropshadow-card);
   margin: 0 auto;
-  width: 80vw;
+  width: 75vw;
 }
 
 .filterButtonGroup {
@@ -36,7 +36,4 @@
 .searchButtonActive {
   /* transform: translateX(-10rem); */
   transition: .2s ease;
-}
-.searchInput {
-
 }

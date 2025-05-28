@@ -1,0 +1,21 @@
+.sectionContainer {
+    height: 22rem;
+    width: 35rem;
+    background: var(--mantine-color-card);
+    border-radius: var(--mantine-radius-default);
+    box-shadow: var(--mantine-dropshadow-card);
+}
+
+.sectionButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem;
+    background: none;
+    border: none;
+    color: var(--mantine-color-text);
+    font-weight: 700;
+    font-size: var(--mantine-font-size-md);
+    text-transform: capitalize;
+    cursor: pointer;
+}

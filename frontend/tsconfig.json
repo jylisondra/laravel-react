@@ -11,6 +11,7 @@
       "widgets/*": ["src/widgets/*"]
     },
     "target": "ES6",
+    "lib": ["dom", "es2017"],
     "module": "ESNext",
     "moduleResolution": "node",
     "jsx": "react",

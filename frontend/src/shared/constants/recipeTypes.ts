@@ -1,7 +1,8 @@
 export const BREADS = {
+  ROLLS: 'rolls',
   SAVORY: 'savory',
   SWEET: 'sweet',
-  ROLLS: 'rolls',
+  SOURDOUGH: 'sourdough',
   FAVES: 'faves',
 } as const
 
@@ -17,6 +18,8 @@ export const COOKIES = {
 } as const
 
 export const DESSERTS = {
+  BARS: 'bars',
+  CHEESECAKES: 'cheesecakes',
   ICE_CREAM: 'ice_cream',
   PIES: 'pies',
   FAVES: 'faves',

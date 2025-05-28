@@ -3,8 +3,12 @@ import { Box, Group, Button, TextInput  } from '@mantine/core'
 import { ButtonPill } from 'shared/ui/button'
 import SearchIcon from 'shared/assets/icons/search.svg?react'
 import classes from './RecipeFilterBar.module.css'
+import { RECIPE_TYPES } from 'shared/constants/recipeTypes'
 
-const RecipeFilterBar = () => {
+interface RecipeFilterProps {
+  onClick: (type: string) => void
+}
+const RecipeFilterBar = ({ onClick }: RecipeFilterProps) => {
     const [showSearch, setShowSearch] = useState(false)
 
     const handleSearch = () => {
@@ -17,27 +21,27 @@ const RecipeFilterBar = () => {
         <Group className={classes.flexContainer}>
           <Box className={classes.filterButtonGroup}>
             <ButtonPill
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.ALL)}
               label='All Recipes'
             />
             <ButtonPill
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.BREADS)}
               label='Breads'
             />
             <ButtonPill 
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.CAKES)}
               label='Cakes'
             />
             <ButtonPill
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.COOKIES)}
               label='Cookies'
             />
             <ButtonPill
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.DESSERTS)}
               label='Desserts'
             />
             <ButtonPill
-              onClick={() => {}}
+              onClick={() => onClick(RECIPE_TYPES.SAVORY)}
               label='Savory'
             />
           </Box>
